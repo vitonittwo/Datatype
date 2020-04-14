@@ -45,13 +45,16 @@ public class Main {
               System.out.println("The long data type have maximum value:  9 223 372 036 854 775 807");
         System.out.println("Example:  ");
               long dc = 300000000000L; // decimal system
-              // long oct = 04273131134000L; // octal system
+              long oct = 04273131134000L; // octal system
+        // String octString = String.valueOf(oct);
+        // System.out.println(octString);
              //  long hx = 0x45d964b800L; // Hexadecimal system
               // long by = 0b100010111011001011001001011100000000000L; // binary system
         System.out.println("long decimal = " + dc + "L");
         System.out.println("long octal system =  04273131134000L");
         System.out.println("long hexadecimal system = 0x45d964b800L");
         System.out.println("long binary system = 0b100010111011001011001001011100000000000L" );
+
               System.out.println();
 
         System.out.println("Float data type");
@@ -86,8 +89,27 @@ public class Main {
         System.out.print("Example:  ");
               char let = 'e';
         System.out.println("char let = " + "'" + let + "'");
-        System.out.println();
+               System.out.println();
+
+        System.out.println("Reference data types.");
+        System.out.print("Example:  ");
+        System.out.println("Animal animal = new Animal(\"giraffe\")");
+        System.out.println("'giraffe'" + "is the reference date.");
+               System.out.println();
+
+        System.out.println("String data types.");
+        System.out.println("Example:  ");
+               String t1 = "String ", t2 = "are", t3 = "class", t4 = "objects.";
+               String t7 = "Input: ",  t6 = "Output: ";
+                 char w = ' ';
+        System.out.println(t7 + "String t1 = \"String \", t2 = \"are\", t3 = \"class\", t4 = \"objects.\";");
+        System.out.println(" " + " " + " " + " " + " " + " " + "char w = ' ';");
+        System.out.println(" " + " " + " " + " " + " " + " " + "System.out.println(t1 + t2 + w + t1 + t3 + w + t4);");
+                System.out.println(t6);
+        System.out.print(" " + " " + " " + " " + " " + " " + t1 + t2 + w + t1 + t3 + w + t4);
+
+                       System.out.println();
 
     }
-    
+
 }
