@@ -1,8 +1,6 @@
 package com.company;
 
 
-import com.sun.deploy.uitoolkit.impl.awt.ui.SwingConsoleWindow;
-
 import static java.lang.Long.MIN_VALUE;
 
 /** @author  vitonit
@@ -115,7 +113,7 @@ public class Main {
         System.out.println("(s * y) + xx - (d * u) result = " + result + "    /result type is double/");
 
         double ss = 33.89;
-        System.out.println("double 33.89 rounding result is  " +  (int)Math.round(ss));
+        System.out.println("double 33.89 rounding result is  " + (int) Math.round(ss));
 
         Integer i = new Integer(5);
         System.out.println(i);
@@ -127,18 +125,58 @@ public class Main {
         System.out.println(m);
 
         hello(); // call method
-        welkome();
-        welkome();
+        welcome();
+        welcome();
 
-    }
-    static void hello(){
-            System.out.println("Hello"); // method body
-            }
-            static void welkome(){
-       System.out.println("Welcom to Java 10!");
-            }
+        long sd = 100;
+        Long as = new Long(100);
+        compare(sd, as);
 
+        long jj = 1233456789L;
+        long zz = 1233456789L;
+        long vv = jj - zz;
+        System.out.println("zz - jj = " + vv);
+
+         }
+    static void compare(Long sd, Long as) // we change the parameters, the result changes (Long or long)
+    // static void compare(long sd, long as)
+    {
+        if (sd == as) {
+            System.out.println("sd and as are equal");
         }
+        else {
+            System.out.println("tq and qt are not equal");
+        }
+           }
+
+            static void hello () {
+                System.out.println("Hello"); // method body
+            }
+
+            static void welcome () {
+                System.out.println("Welcome to Java!");
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
