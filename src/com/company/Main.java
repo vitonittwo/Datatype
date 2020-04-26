@@ -128,7 +128,7 @@ public class Main {
         welcome();
         welcome();
 
-        long sd = 100;
+        long sd = 100L;
         Long as = new Long(100);
         compare(sd, as);
 
@@ -137,15 +137,25 @@ public class Main {
         long vv = jj - zz;
         System.out.println("zz - jj = " + vv);
 
+        String name = "Type String is immutable";
+        name.toUpperCase(); //  ignores the return value
+        String s1 = name.toUpperCase(); // new object
+        System.out.println(name);
+        System.out.println("New object s1: " + s1);
+        name = name.toUpperCase(); // Object argument changed
+        System.out.println("Object argument changed: " + name);
+
          }
-    static void compare(Long sd, Long as) // we change the parameters, the result changes (Long or long)
+    static void compare(long sd, Long as) // we change the parameters, the result changes (Long or long)
     // static void compare(long sd, long as)
+    // static void compare(Long sd, Long as)
+  // static void compare(Long sd, long as)
     {
         if (sd == as) {
             System.out.println("sd and as are equal");
         }
         else {
-            System.out.println("tq and qt are not equal");
+            System.out.println("sd and as are not equal");
         }
            }
 
