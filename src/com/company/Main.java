@@ -12,11 +12,31 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // public final class System {
-        //    extend Object
-
         System.out.println("Primitive data types");
+        integralDataTypes();
 
+        System.out.println("MIN and MAX data types values:");
+        minmaxDataTypes();
+
+        System.out.println("Data Types examples and arithmetic results:");
+        examplesDataTypes();
+
+      System.out.println("Rounding numbers example:");
+        double ss = 33.89;
+        System.out.println("double 33.89 rounding result is  " + (int) Math.round(ss));
+
+        System.out.println("Example of comparing operations with primitives and wrapper objects");
+        operationDataTypes();
+
+        System.out.println("Compare Object and Primitive:");
+        long sd = 100L;
+        Long as = new Long(100);
+        compare(sd, as);
+
+       System.out.println("String object is Immutable:");
+       immutableObjectString();
+       }
+    private static void integralDataTypes() {
         System.out.println("Byte data type");
         System.out.println("The byte data type have minimum value: " + Byte.MIN_VALUE);
         System.out.println("The byte data type have maximum value: " + Byte.MAX_VALUE);
@@ -63,7 +83,8 @@ public class Main {
         System.out.println(t6);
         String t1 = "String ", t2 = "are", t3 = "class", t4 = "objects.";
         System.out.print("      " + t1 + t2 + w + t1 + t3 + w + t4 + "\n" + "\n");
-
+    }
+    private static void minmaxDataTypes() {
         byte aa = 1;
         short bb = 1;
         int cc = 1;
@@ -85,7 +106,8 @@ public class Main {
         System.out.println("The minimum Long value - 1:       " + (Long.MIN_VALUE - dd) + "\n");
         System.out.println("The minimum Float value - 1:       " + (Float.MIN_VALUE - ee) + "\n");
         System.out.println("The minimum Double value - 1:       " + (Double.MIN_VALUE - ff) + "\n");
-
+    }
+    private static void examplesDataTypes() {
         byte y = 45;
         short u = 1005;
         int o = 700000;
@@ -111,10 +133,8 @@ public class Main {
         System.out.println("xx =  o / let = " + xx + "  /result type is Integer/");
         double result = (s * y) + xx - (d * u);
         System.out.println("(s * y) + xx - (d * u) result = " + result + "    /result type is double/");
-
-        double ss = 33.89;
-        System.out.println("double 33.89 rounding result is  " + (int) Math.round(ss));
-
+    }
+    private static void operationDataTypes() {
         Integer i = new Integer(5);
         System.out.println(i);
         i = new Integer(i.intValue() + 1);
@@ -123,20 +143,21 @@ public class Main {
         System.out.println(m);
         m++;
         System.out.println(m);
+    }
+    static void compare(long sd, Long as) // we change the parameters, the result changes (Long or long)
+    // static void compare(long sd, long as)
+    // static void compare(Long sd, Long as)
+    // static void compare(Long sd, long as)
+    {
+        if (sd == as) {
+            System.out.println("sd and as are equal");
+        }
+        else {
+            System.out.println("sd and as are not equal");
+        }
 
-        hello(); // call method
-        welcome();
-        welcome();
-
-        long sd = 100L;
-        Long as = new Long(100);
-        compare(sd, as);
-
-        long jj = 1233456789L;
-        long zz = 1233456789L;
-        long vv = jj - zz;
-        System.out.println("zz - jj = " + vv);
-
+           }
+    private static void immutableObjectString() {
         String name = "Object String is immutable";
         name.toUpperCase(); //  ignores the return value
         String s1 = name.toUpperCase(); // new object
@@ -150,29 +171,8 @@ public class Main {
         System.out.println("The value 'def' is " + String.valueOf(def));
         System.out.println("The length 'def' is " + def.length()); // causes an error: NullPointerException
         System.out.println("THe value 'demo' is " + demo[0]); // causes an error: NullPointerException
-
     }
-    static void compare(long sd, Long as) // we change the parameters, the result changes (Long or long)
-    // static void compare(long sd, long as)
-    // static void compare(Long sd, Long as)
-    // static void compare(Long sd, long as)
-    {
-        if (sd == as) {
-            System.out.println("sd and as are equal");
-        }
-        else {
-            System.out.println("sd and as are not equal");
-        }
-           }
-
-            static void hello () {
-                System.out.println("Hello"); // method body
-            }
-
-            static void welcome () {
-                System.out.println("Welcome to Java!");
-            }
-        }
+               }
 
 
 
