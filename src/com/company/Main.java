@@ -36,6 +36,8 @@ public class Main {
        System.out.println("String object is Immutable:");
        immutableObjectString();
        }
+       // below are descriptions of the methods
+
     private static void integralDataTypes() {
         System.out.println("Byte data type");
         System.out.println("The byte data type have minimum value: " + Byte.MIN_VALUE);
