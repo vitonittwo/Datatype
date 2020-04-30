@@ -121,7 +121,7 @@ public class Main {
         System.out.println(i);
         int m = 5;
         System.out.println(m);
-        m = m + 1;
+        m++;
         System.out.println(m);
 
         hello(); // call method
@@ -137,7 +137,7 @@ public class Main {
         long vv = jj - zz;
         System.out.println("zz - jj = " + vv);
 
-        String name = "Type String is immutable";
+        String name = "Object String is immutable";
         name.toUpperCase(); //  ignores the return value
         String s1 = name.toUpperCase(); // new object
         System.out.println(name);
@@ -145,11 +145,17 @@ public class Main {
         name = name.toUpperCase(); // Object argument changed
         System.out.println("Object argument changed: " + name);
 
-         }
+        String def = null;
+        int[] demo = null;
+        System.out.println("The value 'def' is " + String.valueOf(def));
+        System.out.println("The length 'def' is " + def.length()); // causes an error: NullPointerException
+        System.out.println("THe value 'demo' is " + demo[0]); // causes an error: NullPointerException
+
+    }
     static void compare(long sd, Long as) // we change the parameters, the result changes (Long or long)
     // static void compare(long sd, long as)
     // static void compare(Long sd, Long as)
-  // static void compare(Long sd, long as)
+    // static void compare(Long sd, long as)
     {
         if (sd == as) {
             System.out.println("sd and as are equal");
