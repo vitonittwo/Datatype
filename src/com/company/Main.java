@@ -3,7 +3,8 @@ package com.company;
 
 import static java.lang.Long.MIN_VALUE;
 
-/** @author  vitonit
+/**
+ * @author vitonit
  * @version first
  * date 13.04.2020.
  */
@@ -21,7 +22,7 @@ public class Main {
         System.out.println("Data Types examples and arithmetic results:");
         examplesDataTypes();
 
-      System.out.println("Rounding numbers example:");
+        System.out.println("Rounding numbers example:");
         double ss = 33.89;
         System.out.println("double 33.89 rounding result is  " + (int) Math.round(ss));
 
@@ -33,10 +34,11 @@ public class Main {
         Long as = new Long(100);
         compare(sd, as);
 
-       System.out.println("String object is Immutable:");
-       immutableObjectString();
-       }
-       // below are descriptions of the methods
+        System.out.println("String object is Immutable:");
+        immutableObjectString();
+
+        }
+    // below are descriptions of the methods
 
     private static void integralDataTypes() {
         System.out.println("Byte data type");
@@ -86,6 +88,7 @@ public class Main {
         String t1 = "String ", t2 = "are", t3 = "class", t4 = "objects.";
         System.out.print("      " + t1 + t2 + w + t1 + t3 + w + t4 + "\n" + "\n");
     }
+
     private static void minmaxDataTypes() {
         byte aa = 1;
         short bb = 1;
@@ -109,6 +112,7 @@ public class Main {
         System.out.println("The minimum Float value - 1:       " + (Float.MIN_VALUE - ee) + "\n");
         System.out.println("The minimum Double value - 1:       " + (Double.MIN_VALUE - ff) + "\n");
     }
+
     private static void examplesDataTypes() {
         byte y = 45;
         short u = 1005;
@@ -136,6 +140,7 @@ public class Main {
         double result = (s * y) + xx - (d * u);
         System.out.println("(s * y) + xx - (d * u) result = " + result + "    /result type is double/");
     }
+
     private static void operationDataTypes() {
         Integer i = new Integer(5);
         System.out.println(i);
@@ -146,19 +151,20 @@ public class Main {
         m++;
         System.out.println(m);
     }
-    static void compare(long sd, Long as) // we change the parameters, the result changes (Long or long)
+
+    private static void compare(long sd, Long as) // we change the parameters, the result changes (Long or long)
     // static void compare(long sd, long as)
     // static void compare(Long sd, Long as)
     // static void compare(Long sd, long as)
     {
         if (sd == as) {
             System.out.println("sd and as are equal");
-        }
-        else {
+        } else {
             System.out.println("sd and as are not equal");
         }
 
-           }
+    }
+
     private static void immutableObjectString() {
         String name = "Object String is immutable";
         name.toUpperCase(); //  ignores the return value
@@ -174,7 +180,7 @@ public class Main {
         System.out.println("The length 'def' is " + def.length()); // causes an error: NullPointerException
         System.out.println("THe value 'demo' is " + demo[0]); // causes an error: NullPointerException
     }
-               }
+}
 
 
 
