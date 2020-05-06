@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Primitive data types");
-        integralDataTypes();
+        primitivesDataTypes();
 
         System.out.println("MIN and MAX data types values:");
         minmaxDataTypes();
@@ -40,7 +40,7 @@ public class Main {
         }
     // below are descriptions of the methods
 
-    private static void integralDataTypes() {
+    private static void primitivesDataTypes() {
         System.out.println("Byte data type");
         System.out.println("The byte data type have minimum value: " + Byte.MIN_VALUE);
         System.out.println("The byte data type have maximum value: " + Byte.MAX_VALUE);
