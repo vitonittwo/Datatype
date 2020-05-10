@@ -8,14 +8,26 @@ public class Operators {
 
     public static void main(String[] args) {
 
-        System.out.println("Arithmetic operators:");
+        System.out.println("The Arithmetic operators:");
         arithmeticOperators();
 
-        System.out.println("Comparison operators:");
+        System.out.println("The Comparison operators:");
         comparisonOperators();
 
-        System.out.println("Bitwise operators:");
+        System.out.println("The Bitwise operators:");
         bitwiseOperators();
+
+        System.out.println("The Logical operators:");
+        logicalOperators();
+
+        System.out.println("The Assignment Operators:");
+        assignmentOperators();
+
+        System.out.println("The ternary Operators:");
+        ternaryOperator();
+
+        System.out.println("The instanceof Operators:");
+        instanceofOperator();
 
     }
     // below are descriptions of the methods
@@ -56,6 +68,46 @@ public class Operators {
             System.out.println("Binary Right Shift Operator: blr = f << 3 = " + blr);
             int blz = g >>> 3;
             System.out.println("Zero fill right shift: blz = g >>> 3 = " + blz);
+        }
+        public static void logicalOperators() {
+        boolean lao = false;
+        boolean lap = true;
+        System.out.println("boolean lao = false" + "\n" + "boolean lap = true");
+        System.out.println("Logical AND operator '&&': lao && lap = " + (lao && lap));
+        System.out.println("Logical OR operator '||': lao || lap = " + (lao || lap));
+        System.out.println("Logical NOT operator '!': !(lao || lap) = " + !(lao || lap));
+        }
+        public static void assignmentOperators() {
+        System.out.println("-  = assigns values from right side operands to left side operand A = B");
+            System.out.println("-  A += B is same as A = A + B");
+            System.out.println("-  A -= B is same as A = A - B");
+            System.out.println("-  A *= B is same as A = A * B");
+            System.out.println("-  A /= B is same as A = A / B");
+            System.out.println("-  A %= B is same as A = A % B");
+            System.out.println("-  A <<= 2 is same as A = A << 2");
+            System.out.println("-  A >>= 2 is same as A = A >> 2");
+            System.out.println("-  A &= 2 is same as A = A & 2");
+            System.out.println("-  A ^= 2 is same as A = A ^ 2");
+            System.out.println("-  A |= 2 is same as A = A | 2");
+        }
+        public static void ternaryOperator() {
+            System.out.println("View: variable = (expression)? value if true: value if false");
+        System.out.println("The example:");
+            int yy, xx;
+            yy = 20;
+            xx = (yy == 1) ? 20 : 30;
+            System.out.println("Value of xx is - " + xx);
+            xx = (yy == 20) ? 20 : 40;
+            System.out.println("Value of xx is - " + xx);
+        }
+        public static void instanceofOperator() {
+            System.out.println("View: boolean 'variable' = 'Object reference variable' instanceof 'class/interface type'");
+            System.out.println("The example:");
+            System.out.println("String name =  'Tatoo';" + "\n" + "boolean result = name instanceof String;");
+            String name = "Tatoo";
+            boolean result = name instanceof String;
+            System.out.println("Result = " + result);
+
         }
     }
 
